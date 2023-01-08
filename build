@@ -7,4 +7,4 @@ if [ ! -f "./tailwindcss" ]; then
   mv tailwindcss-macos-arm64 tailwindcss
 fi
 
-./tailwindcss -i input.css -o output.css --content ./**/*.html
+./tailwindcss -i input.css -o output.css --content ./**/*.html --watch
