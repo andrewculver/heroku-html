@@ -1,16 +1,13 @@
 {
   "name": "Heroku HTML",
   "description": "Deploy basic HTML to Heroku",
-  "repository": "https://github.com/andrewculver/heroku_html",
+  "repository": "https://github.com/andrewculver/heroku-html",
   "logo": "https://play-lh.googleusercontent.com/85WnuKkqDY4gf6tndeL4_Ng5vgRk7PTfmpI4vHMIosyq6XQ7ZGDXNtYG2s0b09kJMw",
   "keywords": ["heroku", "html"],
-  "buildpacks": [
-    { "url": "heroku/composer" },
-  ],
   "formation": {
     "web": {
       "quantity": 1,
       "size": "basic"
-    },
-  },
+    }
+  }
 }

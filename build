@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+if [ ! -f "./tailwindcss" ]; then
+  echo "Downloading Tailwind CSS. This will take a moment."
+  curl -sLO https://github.com/tailwindlabs/tailwindcss/releases/latest/download/tailwindcss-macos-arm64
+  chmod +x tailwindcss-macos-arm64
+  mv tailwindcss-macos-arm64 tailwindcss
+fi
+
+./tailwindcss -i input.css -o output.css --content ./**/*.html
